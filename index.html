@@ -2,56 +2,65 @@
 <html>
 	<head>
 		<title>Liyi's home</title>
+		<script src="scripts.js"></script>
 		<link rel="icon" href="assets/css/images/favicon.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym636.ani), url(https://cur.cursors-4u.net/symbols/sym-7/sym636.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/11/26/shiny-red-star.html" target="_blank" title="Shiny Red Star"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Shiny Red Star" style="position:absolute; top: 0px; right: 0px;" /></a>
+		<link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
 	</head>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+		<button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
+		<button class="tablinks" onclick="openCity(event, 'My journey')">My journey</button>
+		<button class="tablinks" onclick="openCity(event, 'Cooking vault')">Cooking vault</button>
+	  </div>
+	  
+	  <div id="Home" class="tabcontent">
+		<body>
+		
+			<h1>Hi, welcome to my website!</h1>
+			<p>I'm extremely pleased you've come to visit. This site is still a work in progress, so please
+				bear with me. Here are more details about
+				<span class = "bold-gold"><a href="me.html">me</a></span>,
+				my <span class = "bold-gold">education/career</span> so far,
+				and my <span class = "bold-gold">food recipes</span> vault.
+				Enjoy!
+			</p>
+		</body>
+	  </div>
+	  
+	  <div id="About me" class="tabcontent">
+		<h3>About me</h3>
+		<p>Paris is the capital of France.</p>
+	  </div>
+	  
+	  <div id="My journey" class="tabcontent">
+		<h3>My journey</h3>
+		<p>Tokyo is the capital of Japan.</p>
+	  </div>
+
+	  <div id="Cooking vault" class="tabcontent">
+		<h3>Cooking vault</h3>
+		<p>Tokyo is the capital of Japan.</p>
+	  </div>
+
+	  <script>
+		function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+		   
 	
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-
-				<!-- Header -->
-					<header id="header">
-						<h1>Liyi Ma</h1>
-						<p>Queen's Engineering &nbsp;&bull;&nbsp; Mentor & Mentee &nbsp;&bull;&nbsp; (Under construction)</p>
-						<nav>
-							<ul>
-								<li><a href="https://medium.com/@liyi.ma" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-								<li><a href="https://www.linkedin.com/in/liyima/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.facebook.com/liyima88/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/liyima" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:liyi.ma@queensu.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-
-					<nav class="navbar">
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#service">Service</a></li>
-							<li><a href="#contact">Contact</a></li>
-						  </ul>
-						</nav>
-
-
-
-
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span> -->
-					</footer>
-
-			</div>
-		</div>
-		<script>window.onload = function() { document.body.classList.remove('is-preload'); }</script>
-		<script>window.ontouchmove = function() { return false; } </script>
-		<script>window.onorientationchange = function() { document.body.scrollTop = 0; }</script>
-	</body>
 </html>
