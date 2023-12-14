@@ -6,7 +6,7 @@ body {
     width: 70%;
     height: 50px;
     top: 40%;
-    left: 15%;
+    left: 18%;
     margin-top: -25px; 
     overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ a:link, a:visited, .bold-gold{
   float: left;
   background-color: #ffffff;
   width: 15%;
-  height: 80px;
+  height: 70px;
   top:0%
 }
 
@@ -36,7 +36,7 @@ a:link, a:visited, .bold-gold{
   display: block;
   background-color: inherit;
   color: black;
-  padding: 16px 16px;
+  padding: 13px 16px;
   width: 100%;
   border: none;
   outline: none;
@@ -44,6 +44,8 @@ a:link, a:visited, .bold-gold{
   font-family: 'League Spartan';
   cursor: pointer;
   transition: 0.3s;
+  font-weight: 100;
+  font-size: 14px;
 }
 
 /* Change background color of buttons on hover */
@@ -64,5 +66,5 @@ a:link, a:visited, .bold-gold{
   padding: 0px 40px;
   width: 70%;
   border-left: none;
-  height: 200px;
+  height: 150px;
 }

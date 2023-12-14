@@ -2,65 +2,66 @@
 <html>
 	<head>
 		<title>Liyi's home</title>
-		<script src="scripts.js"></script>
 		<link rel="icon" href="assets/css/images/favicon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
 	</head>
+	<body>
 	<div class="tab">
-		<button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-		<button class="tablinks" onclick="openCity(event, 'About me')">About me</button>
+		<button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+		<button class="tablinks" onclick="openCity(event, 'Macro Matters')">Macro Matters</button>
+		<button class="tablinks" onclick="openCity(event, 'About me')">Me & my blogs</button>
 		<button class="tablinks" onclick="openCity(event, 'My journey')">My journey</button>
 		<button class="tablinks" onclick="openCity(event, 'Cooking vault')">Cooking vault</button>
 	  </div>
 	  
 	  <div id="Home" class="tabcontent">
-		<body>
-		
 			<h1>Hi, welcome to my website!</h1>
 			<p>I'm extremely pleased you've come to visit. This site is still a work in progress, so please
-				bear with me. Here are more details about
-				<span class = "bold-gold"><a href="me.html">me</a></span>,
-				my <span class = "bold-gold">education/career</span> so far,
-				and my <span class = "bold-gold">food recipes</span> vault.
+				bear with me. Feel free to chat with me on
+				<span class = "bold-gold"><a href="https://www.linkedin.com/in/liyima/">LinkedIn</a></span>
+				or through <span class = "bold-gold"><a href="mailto:liyi.ma@queensu.ca">email</a></span>,
+				or just get to know me by scrolling through here.
 				Enjoy!
 			</p>
-		</body>
 	  </div>
 	  
 	  <div id="About me" class="tabcontent">
-		<h3>About me</h3>
-		<p>Paris is the capital of France.</p>
+		<h3>Me & my blogs</h3>
+		<p>To be updated...</p>
 	  </div>
 	  
+	  <div id="Macro Matters" class="tabcontent">
+		<h3>My macro econ blog!</h3>
+		<p>To be updated...</p>
+	  </div>
+
 	  <div id="My journey" class="tabcontent">
 		<h3>My journey</h3>
-		<p>Tokyo is the capital of Japan.</p>
+		<p></p>
 	  </div>
 
 	  <div id="Cooking vault" class="tabcontent">
 		<h3>Cooking vault</h3>
-		<p>Tokyo is the capital of Japan.</p>
+		<p>To be updated...</p>
 	  </div>
 
-	  <script>
-		function openCity(evt, cityName) {
-		  var i, tabcontent, tablinks;
-		  tabcontent = document.getElementsByClassName("tabcontent");
-		  for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		  }
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-		  document.getElementById(cityName).style.display = "block";
-		  evt.currentTarget.className += " active";
+	<script>function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+		  tabcontent[i].style.display = "none";
 		}
-		
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-		</script>
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+		  tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	  }
+	  
+	  // Get the element with id="defaultOpen" and click on it
+	  document.getElementById("defaultOpen").click();</script>
 		   
-	
+		</body>
 </html>
